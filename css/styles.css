@@ -65,6 +65,7 @@ body {
   font-size: 1.5rem;
   letter-spacing: 0.5px;
   color: #262166;
+  padding-bottom: 30px;
 }
 
 /* ===== Stage ===== */
@@ -151,6 +152,7 @@ body {
 
 /* ===== Spin button ===== */
 .spin-btn {
+  margin-top: 30px;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.25rem;

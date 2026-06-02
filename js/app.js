@@ -29,7 +29,7 @@ function spin() {
   // target angle. We compute the next absolute rotation that (a) is greater
   // than the current one and (b) ends on the target heading.
   const extraTurns = 5 + Math.floor(Math.random() * 3);  // 5, 6, or 7
-  const targetHeading = Math.random() * 360;
+  let targetHeading = Math.random() * 360;
 
   // Keep the bottle clear of the dead-flat boundary (0/180) by a small margin
   // so the chosen side is never visually ambiguous.

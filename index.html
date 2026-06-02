@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Action ou Partage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <!-- Replace logo.svg in /assets with the company logo -->
+      <img src="assets/logo.svg" alt="Company logo" class="logo" />
+    </div>
+  </header>
+
+  <!-- ===== Game stage ===== -->
+  <main class="stage">
+    <span class="header-title">Action ou Partage</span>
+    <div class="board">
+
+      <!-- DARE deck -->
+      <section class="deck deck--dare" aria-label="Dare deck">
+        <div class="card card--dare">
+          <span class="card-label">Action</span>
+        </div>
+      </section>
+
+      <!-- Arrow in the middle -->
+      <div class="bottle-wrap">
+        <div class="bottle" id="bottle">
+          <svg style="color: #262166" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.8 21C9.51997 21 9.37996 21 9.273 20.9455C9.17892 20.8976 9.10243 20.8211 9.0545 20.727C9 20.62 9 20.48 9 20.2V10H5L12 3L19 10H15V20.2C15 20.48 15 20.62 14.9455 20.727C14.8976 20.8211 14.8211 20.8976 14.727 20.9455C14.62 21 14.48 21 14.2 21H9.8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      
+
+      <!-- TRUTH deck -->
+      <section class="deck deck--truth" aria-label="Truth deck">
+        <div class="card-image card--truth">
+          <img src="assets/Cover.png" style="border-radius: 16px; box-shadow: 0 12px 28px rgba(0,0,0,0.18);" />
+        </div>
+      </section>
+    </div>
+
+    <button class="spin-btn" id="spinBtn" type="button">Appuyer</button>
+  </main>
+
+  <!-- ===== Custom result modal (hidden by default) ===== -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalResult">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close">&times;</button>
+      <span class="modal-eyebrow">Option</span>
+      <h2 class="modal-result" id="modalResult">Partage</h2>
+      <button class="modal-again" id="modalAgain" type="button">Fermer</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
